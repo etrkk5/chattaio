@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Prose overrides for dark theme */
+.prose-invert pre {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.prose-invert p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* Smooth bounce keyframe for loading dots */
+@keyframes bounce-dots {
+  0%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-5px); }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #4B5563; }
