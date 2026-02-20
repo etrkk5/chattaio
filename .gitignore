@@ -34,3 +34,6 @@ downloads/
 .Trashes
 ehthumbs.db
 Thumbs.db
+backend.log
+frontend.log
+check_env.py

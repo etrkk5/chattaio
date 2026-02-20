@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
-import { TrashIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { TrashIcon, XMarkIcon, BookOpenIcon } from '@heroicons/react/24/outline';
 import Sidebar from '@/components/Sidebar';
 import ChatThread from '@/components/ChatThread';
 import Composer from '@/components/Composer';
@@ -57,6 +57,15 @@ export default function ChatPage() {
                                 Backend Offline
                             </span>
                         )}
+                        <a
+                            href="http://localhost:8000/docs"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1.5 text-xs text-indigo-400 hover:text-indigo-300 transition-colors px-2 py-1 rounded hover:bg-gray-800"
+                        >
+                            <BookOpenIcon className="h-3.5 w-3.5" />
+                            API Docs
+                        </a>
                         {activeConversation && (
                             <button
                                 onClick={() => dispatch({ type: 'CLEAR_ACTIVE' })}
